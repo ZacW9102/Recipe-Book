@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    background-color: #fffbf7;
+}
+
+.header {
+    background-color: #003049;
+    font-size: 1.3rem;
+    color: #fffbf7;
+    text-shadow: 5px 5px 1px #00111b;
+    display: flex;
+    justify-content: center;
+}
