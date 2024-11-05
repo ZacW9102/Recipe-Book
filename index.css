@@ -1,14 +1,99 @@
+:root {
+    --primary-color: #354F52;
+    --accent-color: #2F3E46;
+    --tertiary-color: #e5eee0;
+}
+
 body {
     margin: 0;
     font-family: "Montserrat", serif;
-    background-color: #fffbf7;
+    background-color: var(--tertiary-color);
 }
 
 .header {
-    background-color: #003049;
-    font-size: 1.3rem;
-    color: #fffbf7;
-    text-shadow: 5px 5px 1px #00111b;
+    font-family: "Baloo 2", sans-serif;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    color: var(--tertiary-color);
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.header h1 {
+    margin: 0;
+    text-shadow: 5px 5px 1px var(--accent-color);
+}
+
+.header i {
+    position: absolute;
+    left: 4vw;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #13191d;
+}
+
+.main {
+    display: flex;
+    height: 90vh;
+}
+
+.sidebar {
+    font-family: "Baloo 2", sans-serif;
+    background-color: var(--accent-color);
+    width: 12vw;
+    height: 100%;
+
+    /* display: none; */
+}
+
+.recipe {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.sidebar h1{
+    margin: 0;
+    padding-top: 20px;
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
+.card-container {
+    width: 100%;
+    height: 600px;
+    margin: 30px 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    width: 18vw;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    color: #1d1d1d;
+}
+
+.card h1 {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 10px 0;
+    color: var(--tertiary-color);
+    text-align: center;
+
+}
+
+.card h2, 
+.card p{
+    margin: 12px 15px;
 }
