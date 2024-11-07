@@ -46,7 +46,6 @@ body {
     background-color: var(--accent-color);
     width: 12vw;
     height: 100%;
-
     display: none;
 }
 
@@ -136,4 +135,16 @@ body {
         height: 600px;
     }
 
+    .sidebar {
+        position: fixed;
+        width: 70vw;
+    }
+
+    .sidebar h1 {
+        font-size: 7rem;
+    }
+
+    .sidebar h3 {
+        font-size: 4rem;
+    }
 }
